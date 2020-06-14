@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Application</title>
+      <link href="style.css" rel="stylesheet">
+      <script src="weatherApp.js"></script>
+  </head>
+  <body>
+  			
+      <nav class="navbar navbar-default">
+      <div class="bg-img">
+     <div class="container-fluid">
+      <div class="page-header">
+        <h2>Weather Application</h2>
+      </div>
+      <br>
+      <div class="row">
+      <div class="col-md-12">
+      <form class="form-inline" onsubmit=" ">
+         <div class="form-group">
+              <label for="cityInput">City Name</label>
+              <input type="text" class="form-control" id="city" name="city" placeholder="e.g Toronto">
+          </div>
+          <div class="form-group">
+              <label for="countryInput">Country Code</label>
+              <input type="text" class="form-control" id="country" name="country" placeholder="CA" maxlength="2">
+         
+          <label class="radio-inline">
+            <input type="radio" name="unit" id="inlineRadio1" value="metric" checked="checked"> °C
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="unit" id="inlineRadio1" value="imperial"> °F
+          </label>
+          </div>
+
+         
+          <button type="button" class="btn btn-default" value="click" onclick="getLocation(); return false;">Submit</button>
+      </form>
+      </div>
+      </div><br><br>
+      <box><center><div id="weather-logic">
+      <div class="row">
+      <div class="col-md-12">
+          <div id="city2"></div></div></div>
+          <div class="row"><div class="col-md-6 col-md-offset-1">
+          <div id="current"></div></div></div>
+          <div class="row"><div class="col-md-6 col-md-offset-1">
+          <div id="weather-icon"></div></div></div>
+          <div class="row"><div class="col-md-6 col-md-offset-1">
+          <div id="description"></div></div></div></center></box><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <h3 id="forcast-hours"></h3>
+          <div class="row">
+            <div class="col-md-3 col-xs-6"><div id="3hr"></div></div>
+            <div class="col-md-3 col-xs-6"><div id="6hr"></div></div>
+            <div class="col-md-3 col-xs-6"><div id="9hr"></div></div>
+            <div class="col-md-3 col-xs-6"><div id="12hr"></div></div>
+          </div>
+          <h3 id="forcast-day"></h3>
+          <div class="row">
+            <div class="col-md-2 col-xs-4"><div id="1day"></div></div>
+            <div class="col-md-2 col-xs-4"><div id="2day"></div></div>
+            <div class="col-md-2 col-xs-4"><div id="3day"></div></div>
+            <div class="col-md-2 col-xs-4"><div id="4day"></div></div>
+            <div class="col-md-2 col-xs-4"><div id="5day"></div></div>
+    
+      </div>
+      </div>
+      </div><!--container closed  -->
+</body>
+</html>
